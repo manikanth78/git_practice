@@ -1,11 +1,11 @@
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-int fact(int n){
+int factorial(int n){
     if (n<=1)
     return 1;
 else{
-    return n * fact(n-1);
+    return n * factorial(n-1);
 }
 }
 int main()
@@ -13,6 +13,6 @@ int main()
     int n;
     cout<<"Enter number to find factorial : "<<endl;
     cin>>n;
-    cout<<"Factorial of number "<<n<<" is  : "<<fact(n)<<endl;
+    cout<<"Factorial of number "<<n<<" is  : "<<factorial(n)<<endl;
     return 0;
 }
